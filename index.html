@@ -3,15 +3,18 @@
     <head>
         <title>CountDown</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/config/timeRemain.css" />
+        <link rel="stylesheet" type="text/css" href="css/configClock/timeRemain.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     </head>
     <body>
         <!-- <div class="background-website"></div> -->
-        <img class="flower" src="imgs/hoa-dao2.png" />
-        <img class="flower" src="imgs/hoa-mai.png" />
-        <img class="lenter" src="imgs/long-den2.png" />
+        <div class="contain-tree-flower">
+            <img class="tree-flower" src="imgs/hoa-dao2.png" />
+        </div>
+        <div class="contain-tree-flower">
+            <img class="tree-flower" src="imgs/hoa-mai.png" />
+        </div>
         <!-- <img class="lenter" src="imgs/long-den3.png" />
         <img class="lenter" src="imgs/long-den4.png" /> -->
         <div class="clock">
@@ -48,8 +51,10 @@
             </div>
         </div>
     </body>
-    <script src="js/display.js"></script>
-    <script src="js/config/remainTime.js"></script>
-    <script src="js/config/countDown.js"></script>
-    <script src="js/config/viewRemainTime.js"></script>
+    <script src="js/displayAll.js"></script>
+    <script src="js/configClock/remainTime.js"></script>
+    <script src="js/configClock/countDown.js"></script>
+    <script src="js/configClock/viewRemainTime.js"></script>
+    <script src="js/configClock/displayClock.js"></script>
+    <script src="js/flowerFly/flowerFly.js"></script>
 </html>

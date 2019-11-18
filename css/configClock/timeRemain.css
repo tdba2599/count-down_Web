@@ -55,12 +55,12 @@
     top: -150%;
     opacity: 0;
 }
-.clock .viewTime  ul {
+.clock .viewTime .time-remain .element-time >  ul {
     width: 100%;
     position: absolute;
     transition: 0.5s;
 }
-.clock .viewTime  ul  li {
+.clock .viewTime .time-remain .element-time >  ul > li {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -92,7 +92,7 @@
     .clock .viewTime .time-remain .element-time {
         border-radius: 7px;
     }
-    .clock .viewTime  ul  li {
+    .clock .viewTime  .time-remain .element-time > ul > li {
         font-size: 34.5px;
     }
 }
