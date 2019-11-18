@@ -31,7 +31,7 @@ function displayClock(){
     };
 }
 
-displayClock.prototype = new displayAll(); // Kế thừa hàm khởi tạo displayAll để sử dụng phương thứcc display
+displayClock.prototype = new displayAll(); // Kế thừa hàm khởi tạo displayAll để sử dụng phương thức display
 // Khởi chạy các hàm
 var displayClock = new displayClock();
 displayClock.displayContainClock();
