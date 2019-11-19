@@ -25,7 +25,7 @@
     font-size: 25px;
     top: -100%;
     left: 32%;
-    color: rgb(255, 255, 255);
+    color: #a93132;
     opacity: 0;
 }
 .clock .viewTime .time-remain:first-child {
@@ -36,21 +36,23 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    border: 1.5px solid #d4903d7a;
     background-color: rgba(255, 255, 255, 0.295);
     border-radius: 10px;
     top: 200%;
     opacity: 0;
+    
 }
 .clock .viewTime .time-remain .element-time:nth-child(odd) {
     margin-left: 3px;
 }
 .clock .viewTime .hai-cham > p {
     font-size: 100px;
-    line-height: 95%;
+    line-height: 110%;
     height: 100%;
     width: 100%;
     opacity: 1;
-    color: rgb(255, 255, 255);
+    color: #a93132;
     position: relative;
     top: -150%;
     opacity: 0;
@@ -67,7 +69,7 @@
     text-align: center;
     line-height: 220%;
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: #a93132;
 }
 
 @media only screen and (max-width: 414px) {

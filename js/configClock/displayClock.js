@@ -9,7 +9,7 @@ function displayClock(){
     // Hiển thị khung clock
     this.displayContainClock = function(){
         setTimeout(()=>{
-            this.clock.style.opacity = "1";
+            // this.clock.style.opacity = "1";
             this.clock.style.width = "50%";
             this.clock.style.transition = "1s";
             setTimeout(()=>{

@@ -5,7 +5,6 @@ body {
 
 .contain-tree-flower {
     opacity: 0;
-    /* border: 1px solid red; */
 }
 
 .contain-tree-flower .tree-flower {
@@ -17,7 +16,7 @@ body {
 
 .contain-tree-flower:nth-child(1) {
     position: fixed;
-    width: 33%;
+    width: 30%;
     height: 60%;
     z-index: 9;
     top: 0px;
@@ -27,19 +26,11 @@ body {
     position: fixed;
     bottom: 10px;
     right: -30%;
-    width: 30%;
+    width: 28%;
     height: 65%;
     z-index: 8;
 }
- /*
-.tree-flower:nth-child(2) {
-    position: fixed;
-    bottom: 10px;
-    right: -30%;
-    width: 30%;
-    height: 65%;
-    z-index: 9;
-} */
+
 .lentern {
     position: absolute;
     z-index: 10;
@@ -92,8 +83,9 @@ body {
     top: 0px;
     box-shadow: inset 0px 0px 150px rgb(0, 0, 0);
     z-index: 10;
-    display: none;
+    /* display: none; */
 }
+
 .family {
     position: fixed;
     width: 30%;
@@ -111,25 +103,78 @@ body {
     width: 20%;
     height: 35%;
 }
+@keyframes animationTopDownTextTet {
+    to {
+        top: -12%;
+    }
+}
+@keyframes animationTopDownNumber2020 {
+    to {
+        top: -13%;
+    }
+}
+@keyframes animationTopDownSlogan {
+    to {
+        top: -15%;
+    }
+}
+.textTet {
+    position: fixed;
+    top: -50%;
+    width: 9%;
+    height: 32%;
+    left: 26%;
+    z-index: 11;
+    -webkit-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
+    -moz-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
+}
+.number {
+    position: fixed;
+    top: -50%;
+    z-index: 11;
+}
+.number:nth-child(7) {
+    left: 35%;
+    -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
+    -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
+}
+.number:nth-child(8) {
+    left: 40%;
+    -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
+    -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
+}
+.number:nth-child(9) {
+    left: 45%;
+    -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
+    -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
+}
+.number:nth-child(10) {
+    left: 50%;
+    -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
+    -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
+}
+.slogan {
+    position: fixed;
+    top: -50%;
+    width: 10%;
+    height: 33%;
+    left: 55%;
+    z-index: 11;
+    -webkit-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
+    -moz-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
+}
 /* Container chứa đồng hồ đếm ngược */
 .clock {
     width: 0px;
     height: 0px;
-    margin: 150px auto;
-    font-family: 'Roboto', sans-serif;
-    border: 1.5px solid rgba(255, 255, 255, 0.493);
+    margin: 180px auto;
+    font-family: 'Baloo Bhai', cursive;
+    border: 1.5px solid #d4903d7a;
     border-radius: 10px;
-    background-color: #dac594ee;
-    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.199);
     position: relative;
 }
-/* .clock .number-2020 {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: -30%;
-    left: 35%;
-} */
+
 .clock .lan:nth-child(2) {
     width: 20%;
     height: 60%;
@@ -138,13 +183,7 @@ body {
     left: 15%;
     transform: rotateY(180deg);
 }
-/* .clock .lan:nth-child(3) {
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    top: -57%;
-    right: 15%;
-} */
+
 
 @media only screen and (max-width: 414px) {
     body {
