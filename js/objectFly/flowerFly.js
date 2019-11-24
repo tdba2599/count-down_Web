@@ -31,16 +31,20 @@ function flowerFly() {
         }
     };
 }
-
 flowerFly.prototype = new configFly();
-var listFlowerFly = [];
-var i = 0;
-setTimeout(function(){
-    var interval = setInterval(function(){
-        listFlowerFly[i] = new flowerFly();
-        listFlowerFly[i].createObjectFly();
-        ++i;
-        if(i == 50)
-            clearInterval(interval);
-    }, 500);
-}, 2000);
+
+function displayFlowerFly(){
+    var listFlowerFly = [];
+    var i = 0;
+    setTimeout(function(){
+        var interval = setInterval(function(){
+            listFlowerFly[i] = new flowerFly();
+            listFlowerFly[i].createObjectFly();
+            ++i;
+            if(i == 50)
+                clearInterval(interval);
+        }, 500);
+    }, 2000);
+}
+
+displayFlowerFly();

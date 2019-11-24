@@ -4,8 +4,10 @@ function displayAll(){
     this.listLentern_1 = document.querySelectorAll(".contain-tree-flower:nth-child(1) > .lentern"); // Các lồng đèn trên cây đào
     this.listLentern_2 = document.querySelectorAll(".contain-tree-flower:nth-child(2) > .lentern"); // Các lồng đèn trên cây mai
     this.number2020 = document.getElementsByClassName("number"); // Các chữ số trong 2020
-    this.textTet = document.getElementsByClassName("textTet")[0];
-    this.slogan = document.getElementsByClassName("slogan")[0]; 
+    this.textTet = document.getElementsByClassName("textTet")[0]; // Không biết gọi thế nào :)
+    this.slogan = document.getElementsByClassName("slogan")[0]; // Câu nói hay ho năm canh tý
+    // this.iconSetting = document.getElementsByClassName("icon-setting")[0]; // icon setting
+    // this.setting = document.getElementsByClassName("setting")[0]; // Bảng setting
 
     // Hàm hiển thị các phần tử với giá trị Top, thời gian bắt đầu, thời gian lặp qua từng phần tử,
     // mảng phần tử, loại vị trí, giá trị, đơn vị đo của giá trị Top
@@ -56,6 +58,7 @@ function displayAll(){
     this.displayLentern = function(){
         var i,j;
         i = j = 0;
+            // Hiển thị lồng đèn trên cây đào
             var interval_1 = setInterval(()=>{
                 this.listLentern_1[i].style.transform = "rotate(0deg)";
                 ++i;
@@ -68,6 +71,7 @@ function displayAll(){
             this.display(1000, 2000, 4, [this.listLentern_1[1]], "left", 52, "%");
             this.display(1000, 3000, 4, [this.listLentern_1[2]], "top", 38, "%");
             this.display(1000, 3000, 4, [this.listLentern_1[2]], "left", 18, "%");
+            // Hiển thị lồng đèn trên cây mai
             var interval_2 = setInterval(()=>{
                 this.listLentern_2[j].style.transform = "rotate(0deg)";
                 ++j;
@@ -83,7 +87,7 @@ function displayAll(){
     }
     // Hiển thị chữ TẾT
     this.displayTextTet = function(){
-        this.display(500, 0, 2, [this.textTet], "top", -10, "%");
+        this.display(500, 0, 2, [this.textTet], "top", -7, "%");
     }
     // Hiển thị các chữ số trong 2020
     this.displayNumber2020 = function() {
@@ -91,8 +95,21 @@ function displayAll(){
     }
     // Hiển thị câu slogan tết 2020
     this.displaySlogan = function(){
-        this.display(1700, 0, 2, [this.slogan], "top", -13, "%");
+        this.display(1700, 0, 2, [this.slogan], "top", -5, "%");
     }
+    // Hiển trị bảng cài đặt
+    // this.displaySetting = function(){
+    //     var that = this;
+    //     function openSetting() {
+    //         that.display(0, 0, 1, [that.setting], "right", 0, "%");
+    //         that.iconSetting.onclick = close;
+    //     }
+    //     function close() {
+    //         that.display(0, 0, 1, [that.setting], "right", -25, "%");
+    //         that.iconSetting.onclick = openSetting;
+    //     }
+    //     this.iconSetting.onclick = openSetting;
+    // }
 }
 
 
@@ -100,7 +117,8 @@ function displayAll(){
 var display = new displayAll();
 display.displayTreeFlower();
 display.displayImgFamily();
-// display.displayLentern();
+display.displayLentern();
 display.displayTextTet();
 display.displayNumber2020();
 display.displaySlogan();
+display.displaySetting();

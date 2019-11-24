@@ -86,6 +86,7 @@
     }
     .clock .viewTime .time-remain:first-child {
         margin-right: 10px;
+        transition: 0.5s;
     }
     .clock .viewTime .hai-cham > p {
         font-size: 45px;

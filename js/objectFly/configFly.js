@@ -39,7 +39,7 @@ function configFly() {
             // Kiểm tra xem đối tượng đã di chuyển vượt quá khung nhìn của trình duyệt chưa
             // nếu đã vượt qua thì xóa hành động interval và xóa đối tượng đi
             // set lại vị trí ban đầu cho đối tượng mới và tạo đối tượng mới
-            if(this.left >=window.screen.availWidth || this.top >= window.screen.availHeight) {
+            if(this.left >= window.screen.availWidth || this.top >= window.screen.availHeight) {
                 clearInterval(interval);
                 this.view.removeChild(this.objectFly);
                 this.top = Math.floor(Math.random()*2)*100 + 30 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Tạo ra vị trí Top ngẫu nhiên

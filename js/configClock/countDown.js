@@ -7,12 +7,18 @@ var countDown = function(){
     this.createListNumber = function(){
         this.ul = document.createElement("ul");
         this.elementLi = [];
-        // Tạo các li mang giá trị cho li từ 0-9
+        this.char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+        // Tạo các li mang giá trị cho li từ 0-9, từ A-Z và khoảng trắng
         this.createLi = function(view){
             for(var i=0; i<=9 ; i++) {
                 this.elementLi[i] = document.createElement("li");
                 this.elementLi[i].innerHTML = i;
                 this.ul.appendChild(this.elementLi[i]);
+            }
+            for(var j = 0; j < this.char.length; j++){
+                this.elementLi[i+j] = document.createElement("li");
+                this.elementLi[i+j].innerHTML = this.char[j];
+                this.ul.appendChild(this.elementLi[i+j]); 
             }
             view.appendChild(this.ul);
         }

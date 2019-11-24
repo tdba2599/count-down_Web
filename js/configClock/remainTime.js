@@ -39,12 +39,7 @@ var remainTime = function(year, month, date, hourn, minute, second, millisecond)
            // this.dateRemain[4] = Math.floor(this.timeRemain % 1000); // Milli giây
             return this.dateRemain;
         } else {
-            this.dateRemain[0] = 0 // Ngày
-            this.dateRemain[1] = 20 // Giờ
-            this.dateRemain[2] = 20 // Phút
-            this.dateRemain[3] = 0 // Giây
-            //this.dateRemain[4] = 0 // Milli giây
-            return this.dateRemain;
+            return "NEW_YEAR";
         }
     }
 }

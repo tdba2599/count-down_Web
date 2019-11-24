@@ -30,14 +30,19 @@ function lenternFly() {
     };
 }
 lenternFly.prototype = new configFly();
-// var listFlowerFly = [];
-// var i = 0;
-// setTimeout(function(){
-//     var interval = setInterval(function(){
-//         listFlowerFly[i] = new lenternFly();
-//         listFlowerFly[i].createObjectFly ();
-//         ++i;
-//         if(i == 10)
-//             clearInterval(interval);
-//     }, 500);
-// }, 2000);
+
+function displayLenternFly() {
+    var listFlowerFly = [];
+    var i = 0;
+    setTimeout(function(){
+        var interval = setInterval(function(){
+            listFlowerFly[i] = new lenternFly();
+            listFlowerFly[i].createObjectFly ();
+            ++i;
+            if(i == 10)
+                clearInterval(interval);
+        }, 500);
+    }, 2000);
+}
+
+// displayLenternFly();

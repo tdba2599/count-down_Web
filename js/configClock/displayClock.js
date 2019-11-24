@@ -2,7 +2,7 @@ function displayClock(){
     this.clock = document.getElementsByClassName("clock")[0]; // Khung của clock
     this.elementTime = document.getElementsByClassName("element-time"); // Các đối tượng element-time dùng để hiển thị phần tử time
     this.timeName = document.querySelectorAll(".clock .viewTime .time-remain > p"); // Tên của các thành phần thời gian
-    this.haiCham = document.querySelectorAll(".clock .viewTime .hai-cham > p");
+    this.haiCham = document.querySelectorAll(".clock .viewTime .hai-cham > p"); // Dấu hai chấm
     this.i = 0; // Biến trung gian
     this.j = 0; // Biến trung gian
 
