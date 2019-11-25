@@ -172,7 +172,9 @@ body {
     left: 25%;
     /* margin: 180px auto; */
     font-family: 'Baloo Bhai', 'Arial';
-    border: 1.5px solid #d4903d7a;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #e9c69c;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.199);
     position: fixed;
