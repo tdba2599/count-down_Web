@@ -3,8 +3,6 @@
 /************************************************************************************ */
 
 var remainTime = function(year, month, date, hourn, minute, second, millisecond) {
-    
-    //this.future = [2019, 10, 9, 14, 19, 00, 000]; // Năm, tháng, ngày, giờ, phút, giây, milli giây
 
     this.dateN; // Đối tượng date hiện tại
     this.dateF; // Đối tượng date tương lai

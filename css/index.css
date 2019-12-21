@@ -60,19 +60,19 @@ body {
     width: 11%;
     height: 30%;
     top: -150%;
-    left: -150%;
+    left: -250%;
 }
 .contain-tree-flower:nth-child(2) > .lentern:nth-child(3) {
     width: 17%;
     height: 23%;
     top: -150%;
-    left: -150%;
+    left: -250%;
 }
 .contain-tree-flower:nth-child(2) > .lentern:nth-child(4) {
     width: 10%;
     height: 33%;
     top: -150%;
-    left: -150%;
+    left: -250%;
 }
 
 
@@ -111,7 +111,7 @@ body {
 }
 @keyframes animationTopDownNumber2020 {
     to {
-        top: -13%;
+        top: -11%;
     }
 }
 @keyframes animationTopDownSlogan {
@@ -121,18 +121,20 @@ body {
 }
 .textTet {
     position: fixed;
-    top: -50%;
+    top: -7%;
     width: 9%;
     height: 32%;
     left: 26%;
     z-index: 11;
     -webkit-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
     -moz-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
+    opacity: 0;
 }
 .number {
     position: fixed;
-    top: -50%;
+    top: -8%;
     z-index: 11;
+    opacity: 0;
 }
 .number:nth-child(7) {
     left: 35%;
@@ -156,13 +158,14 @@ body {
 }
 .slogan {
     position: fixed;
-    top: -50%;
+    top: -10%;
     width: 10%;
     height: 33%;
     left: 55%;
     z-index: 11;
     -webkit-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
     -moz-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
+    opacity: 0;
 }
 /* Container chứa đồng hồ đếm ngược */
 .clock {
@@ -170,11 +173,10 @@ body {
     height: 0px;
     top: 25%;
     left: 25%;
-    /* margin: 180px auto; */
     font-family: 'Baloo Bhai', 'Arial';
     border-style: solid;
     border-width: 1.5px;
-    border-color: #e9c69c;
+    border-color: rgba(212, 144, 61, 0.432);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.199);
     position: fixed;
@@ -189,24 +191,6 @@ body {
     transform: rotateY(180deg);
 }
 
-/* .setting {
-    position: fixed;
-    width: 25%;
-    height: 40%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    right: -25%;
-    top: 10px;
-    background-color: rgb(255, 107, 107);
-    z-index: 12;
-}
-
-.icon-setting {
-    position: absolute;
-    height: 15%;
-    left: -12%;
-    cursor: pointer;
-} */
 
 @media only screen and (max-width: 414px) {
     .flower:nth-child(1) {

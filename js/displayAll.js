@@ -87,29 +87,16 @@ function displayAll(){
     }
     // Hiển thị chữ TẾT
     this.displayTextTet = function(){
-        this.display(500, 0, 2, [this.textTet], "top", -7, "%");
+        this.display(1200, 0, 2, [this.textTet], "top", -7, "%");
     }
     // Hiển thị các chữ số trong 2020
     this.displayNumber2020 = function() {
-        this.display(500, 200, 2, this.number2020, "top", -8, "%");
+        this.display(1200, 200, 2, this.number2020, "top", -8, "%");
     }
     // Hiển thị câu slogan tết 2020
     this.displaySlogan = function(){
-        this.display(1700, 0, 2, [this.slogan], "top", -5, "%");
+        this.display(2000, 0, 2, [this.slogan], "top", -10, "%");
     }
-    // Hiển trị bảng cài đặt
-    // this.displaySetting = function(){
-    //     var that = this;
-    //     function openSetting() {
-    //         that.display(0, 0, 1, [that.setting], "right", 0, "%");
-    //         that.iconSetting.onclick = close;
-    //     }
-    //     function close() {
-    //         that.display(0, 0, 1, [that.setting], "right", -25, "%");
-    //         that.iconSetting.onclick = openSetting;
-    //     }
-    //     this.iconSetting.onclick = openSetting;
-    // }
 }
 
 

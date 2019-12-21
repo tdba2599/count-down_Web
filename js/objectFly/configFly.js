@@ -1,6 +1,5 @@
 function configFly() {
     this.objectFly; // Đối tượng <img /> dùng để hiển thị hoa hoặc cánh hoa
-    this.view; // Phần tử cha chứa đối tượng <img />
     this.width = 10; // Chiều rộng của <img />
     this.height = 10; // Chiều cao của <img />
     this.top =  Math.floor(Math.random()*2)*100 + 30 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Vị trí top ban đầu của <img /> so với phần tử cha chứa nó
@@ -22,16 +21,18 @@ function configFly() {
         this.objectFly.src = "imgs/"+this.typeObject[this.i]+this.typeFlieImg;
         this.objectFly.style.width = this.width + "%";
         this.objectFly.style.height = this.height + "%";
-        this.objectFly.style.top = this.top + "px";
-        this.objectFly.style.left = this.left + "px";
+        this.objectFly.style.top = this.top + "%";
+        this.objectFly.style.left = this.left + "%";
         this.objectFly.style.position = "absolute";
         this.objectFly.style.zIndex = this.zIndex;
         this.view.appendChild(this.objectFly);
         this.actionFly();
     };
+
     // Tạo hành động di chuyển cho đối tượng <img />
     this.actionFly = function(){
-        var interval = setInterval(() => {
+        var animationFrame;
+        var action = ()=>{
             this.top += this.aTop; 
             this.left += this.aLeft;
             this.objectFly.style.top = this.top + "px";
@@ -40,14 +41,18 @@ function configFly() {
             // nếu đã vượt qua thì xóa hành động interval và xóa đối tượng đi
             // set lại vị trí ban đầu cho đối tượng mới và tạo đối tượng mới
             if(this.left >= window.screen.availWidth || this.top >= window.screen.availHeight) {
-                clearInterval(interval);
+                cancelAnimationFrame(animationFrame);
                 this.view.removeChild(this.objectFly);
                 this.top = Math.floor(Math.random()*2)*100 + 30 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Tạo ra vị trí Top ngẫu nhiên
                 this.left = Math.floor(Math.random()*2)*100 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Tạo ra vị trí Left ngẫu nhiên
                 setTimeout(()=>{
                     this.createObjectFly();
                 }, 1000);
+            } else {
+                animationFrame = window.requestAnimationFrame(action);
             }
-        }, 10);
-    }
+        };
+        action();
+    };
+
 }
