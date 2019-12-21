@@ -11,12 +11,10 @@ function flowerFly() {
     // Phương thức chứa các lần random
     this.random = function(){
         this.i = Math.floor(Math.random()*6); // lấy ngẫu nhiên 1 số từ 0->5
-        this.top = Math.ceil(Math.random()*5 + 2) * 10; // Tạo ra vị trí Top ngẫu nhiên
-        this.left = Math.ceil(Math.random()*5 + 2) * 10; // Tạo ra vị trí Left ngẫu nhiên
+        this.top = Math.floor(Math.random()*2)*100 + 30 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Tạo ra vị trí Top ngẫu nhiên
+        this.left = Math.floor(Math.random()*2)*100 + 30 + Math.floor(Math.random()*10)*Math.floor(Math.random()*5); // Tạo ra vị trí Left ngẫu nhiên
         this.aTop = Math.ceil(Math.random()*6)/10; // Lẫy ngẫu nhiên một giá trị từ 0.1->0.5 làm gia tốc theo trục Y
         // Lấy ngẫu nhiên một số từ 0.1->0.5 làm gia tốc theo trục X 
-        // sao cho không được trùng với gia tốc theo trục X
-        console.log(this.top +"_"+ this.left);
         do {
             this.aLeft = Math.ceil(Math.random()*6)/10;
         } while(this.aLeft == this.aTop);
