@@ -76,7 +76,7 @@ var viewRemainTime = function(){
                         break;
                         // Hiển thị dãy số 2020
                         case 3:
-                            this.elementTime = [2, 0, 2, 0 ,36 ,36, 36, 36];
+                            this.elementTime = [2, 0, 2, 1 ,36 ,36, 36, 36];
                             this.x = 0;
                         break;
                     }
